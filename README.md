@@ -17,22 +17,9 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-cn.
 
 ## Environment
 
-- `PLUGIN_CORPID`: The corpid for authorization
-- `WECHAT_CORPID`: alias for `PLUGIN_CORPID`
-- `PLUGIN_CORP_SECRET`: The corp secret for authorization
-- `WECHAT_CORP_SECRET`: alias for `PLUGIN_CORP_SECRET`
-- `PLUGIN_AGENT_ID`: The agent id to send the message
-- `WECHAT_AGENT_ID`: alias for `PLUGIN_AGENT_ID`
-- `PLUGIN_TO_PARTY`: The party ids to send the message
-- `WECHAT_TO_PARTY`: alias for `PLUGIN_TO_PARTY`
-- `PLUGIN_TO_USER`: The user ids to send the message to
-- `WECHAT_TO_USER`: alias for `PLUGIN_TO_USER`
-- `PLUGIN_TO_TAG`: The tag ids to send the message to
-- `WECHAT_TO_TAG`: alias for `PLUGIN_TO_TAG`
-- `PLUGIN_SAFE`:  encrypt message, default is false
-- `PLUGIN_MSG_URL`: The link for the text card click
-- `PLUGIN_BTN_TEXT`: The text for the button on the card
-- `PLUGIN_TITLE`: Notification title
+- `PLUGIN_KEY`: The send key
+- `WECHAT_KEY`: alias for `PLUGIN_CORPID`
+- `PLUGIN_MSG_TYPE`: msgtype.
 - `PLUGIN_MESSAGE`: Notification body message, support markdown.
 
 ## Usage
