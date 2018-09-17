@@ -32,7 +32,7 @@ function sendMsgFromWork() {
 
   return request({
     method: 'POST',
-    url: 'https://qyapi.weixin.qq.com/cgi-bin/message/send',
+    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send',
     qs: {
       key: KEY
     },
@@ -42,8 +42,10 @@ function sendMsgFromWork() {
 }
 
 function sendMsgFromWechat() {
-  return getAccessToken()
-    .then(sendMsgFromWork)
+  return sendMsgFromWork()
+    .then(res => {
+      console.log(res)
+    })
     .catch(err => {
       console.error(err);
     });
@@ -51,7 +53,6 @@ function sendMsgFromWechat() {
 
 sendMsgFromWechat();
 module.exports = {
-  getAccessToken,
   sendMsgFromWork,
   sendMsgFromWechat
 };
