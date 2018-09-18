@@ -15,7 +15,7 @@ function sendMsgFromWork() {
 
   const KEY = PLUGIN_KEY || WECHAT_KEY;
   const MSG_TYPE = PLUGIN_MSG_TYPE || 'text';
-  const MESSAGE = render(PLUGIN_MESSAGE);
+  const MESSAGE = render(PLUGIN_MESSAGE).trim();
 
   let body = {
     msgtype: MSG_TYPE
